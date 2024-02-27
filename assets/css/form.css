@@ -3,8 +3,25 @@
     border: 10px dashed var(--secondary-color);
     margin: var(--spacing);
     display: flex;
+    /* position: static; */
     justify-content: center;
     align-items: center;
+}
+
+.leftSide h2 {
+    position: absolute;
+    left: 200px;
+    top: 400px;
+}
+
+.leftSide img {
+    border: 1px solid var(--secondary-color);
+    border-radius: 300px;
+    margin: var(--spacing);
+    display: flex;
+    height: 80%;
+    width: 80%;
+    /* flex: 1 1 auto; */
 }
 
 .rightSide {
