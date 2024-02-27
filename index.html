@@ -16,13 +16,12 @@
     </header>
     <main>
         <section class="leftSide">
-            <h2>My First Blog</h2>
-            <!-- gradient circle goes here -->
-            <img src="https://external-preview.redd.it/SAEdDI5TATyMnMfsLw9y-gGHz886i1WEGG1FDmnKPLg.jpg?auto=webp&s=0d55abe183e736152689a5761e2f4bb02f3a99df" alt="woman with futuristic looking glasses holding corn lol">
+            <h2 id="message">sweet dreams, cone shaped friend</h2>
+            <img id="img" src="https://assets-global.website-files.com/62d84e447b4f9e7263d31e94/637cacc62bf87f5f23db79f0_Cyber-Corn-Woman.jpeg" alt="woman with futuristic looking glasses sleeping next to corn lol">
         </section>
         <section class="rightSide">
             <h2>Whats on your mind?</h2>
-            <div class="formInputs">
+            <form id="formInputs">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username">
                 <label for="title">Title</label>
@@ -30,12 +29,18 @@
                 <label for="content">Content</label>
                 <input type="text" id="content" name="content">
                 <input type="submit" value="Submit" id="submit">
-            </div>
+            </form>
+            <!-- <div>
+                <h2>Most Recent Entry</h2>
+                <section id="displayBlog">
+                </section>
+            </div> -->
         </section>
     </main>
     <footer>
         <h3><a href="#">see my other work!</a></h3>
     </footer>   
+    <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>
 </html>

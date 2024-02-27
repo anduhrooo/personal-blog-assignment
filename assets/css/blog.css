@@ -1,0 +1,13 @@
+:root {
+    --primary-color: grey;
+    --secondary-color: black;
+    --accent-color: pink;
+    --spacing: 20px;
+}
+
+#displayBlog {
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    border: 10px solid var(--secondary-color);
+    margin: var(--spacing);
+}

@@ -1,13 +1,23 @@
-const mode = document.getElementById(`modeToggle`);
-const body = document.getElementById(`darkMode`)
+const formInputs = document.getElementById(`formInputs`)
+const linkUrl = "blog.html"
+// const recentEntry = document.getElementById(`displayBlog`)
+// const divEl = document.createElement(`div`)
+// const headerEl = document.createElement(`h2`)
+// const pEl = document.createElement(`p`)
+// const smallHeaderEl = document.createElement(`h3`)
 
-mode.addEventListener(`click`, function() {
-    // console.log(`click`)
-    if (body.id === `darkMode`) {
-        body.id = `lightMode`
-        mode.textContent = `🌙`
-    } else {
-        body.id = `darkMode`
-        mode.textContent = `☀️`
+formInputs.addEventListener(`submit`, function(event) {
+    event.preventDefault();
+    const username = document.getElementById(`username`).value;
+    const title = document.getElementById(`title`).value;
+    const content = document.getElementById(`content`).value;
+    const entry = {
+        username,
+        title,
+        content
     }
+
+    localStorage.setItem(`entry`, JSON.stringify(entry));
+    window.location.href = linkUrl
 })
+

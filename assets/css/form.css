@@ -10,8 +10,11 @@
 
 .leftSide h2 {
     position: absolute;
-    left: 200px;
+    left: 300px;
     top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
 }
 
 .leftSide img {
@@ -31,7 +34,7 @@
     margin: var(--spacing);
 }
 
-.formInputs {
+#formInputs {
     display: flex;
     flex-direction: column;
 }
