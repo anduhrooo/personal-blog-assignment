@@ -1,26 +1,32 @@
-const recentEntry = document.getElementById(`displayBlog`)
-const divEl = document.createElement(`div`)
-const headerEl = document.createElement(`h2`)
-const pEl = document.createElement(`p`)
-const smallHeaderEl = document.createElement(`h3`)
-const backBtn = document.getElementById(`backBtn`)
-const linkUrl = "index.html"
+const recentEntry = document.getElementById(`displayBlog`);
+const backBtn = document.getElementById(`backBtn`);
+const linkUrl = "index.html";
+let entries = JSON.parse(localStorage.getItem(`entries`));
 
-function renderMessage() {
-    const lastBlog = JSON.parse(localStorage.getItem(`entry`))
-    recentEntry.appendChild(divEl);
-    divEl.appendChild(headerEl)
-    headerEl.textContent = `Title: ${lastBlog.title}`
-    divEl.appendChild(pEl)
-    pEl.textContent = `${lastBlog.content}`
-    divEl.appendChild(smallHeaderEl)
-    smallHeaderEl.textContent = `Posted by: ${lastBlog.username}`
-    
-}
 
 renderMessage()
 
+function renderMessage() {
+    for (let i = 0; i < entries.length; i++) {
+        const articleEl = document.createElement(`article`);
+        const headerEl = document.createElement(`h2`);
+        const pEl = document.createElement(`p`);
+        const smallHeaderEl = document.createElement(`h3`);
+        articleEl.appendChild(headerEl)
+        headerEl.textContent = `Title: ${entries[i].title}`
+        articleEl.appendChild(pEl)
+        pEl.textContent = `${entries[i].content}`
+        articleEl.appendChild(smallHeaderEl)
+        smallHeaderEl.textContent = `Posted by: ${entries[i].username}`
+        recentEntry.appendChild(articleEl);
+    }
+    
+}
+
+
+
 backBtn.addEventListener (`click`, function() {
     console.log(`click`)
+    localStorage.setItem(`entries`, JSON.stringify(entries))
     window.location.href = linkUrl
 })

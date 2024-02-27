@@ -5,7 +5,7 @@
     --spacing: 20px;
 }
 
-#displayBlog {
+article {
     background-color: var(--primary-color);
     padding: var(--spacing);
     border: 10px solid var(--secondary-color);
