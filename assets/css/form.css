@@ -1,0 +1,20 @@
+.leftSide {
+    width: 50%;
+    border: 10px dashed var(--secondary-color);
+    margin: var(--spacing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide {
+    width: 50%;
+    padding: var(--spacing);
+    border: 10px dashed var(--secondary-color);
+    margin: var(--spacing);
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+}
