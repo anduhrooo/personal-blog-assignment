@@ -1,6 +1,9 @@
+## Link
+    https://anduhrooo.github.io/personal-blog-assignment/
+
 ## Description
 
-its a blog.
+    I created a two page website that accpets user inputs (username, title, content) and builds them onto a new page. Information is stored in local storage to be retrieved later. There is a light and dark mode toggle that also remembers the user's last selected choice. 
 
 ## User Story
 
@@ -33,3 +36,11 @@ its a blog.
     THEN I can see the title, the content, and the author of the post.
     WHEN I view the footer,
     THEN I am presented with a link to the developer's portfolio.
+
+## Mock Up
+
+![project mock up](./assets/images/100-web-apis-challenge-demo.gif)
+
+## Credits
+
+    all work was done by me and is my own.
