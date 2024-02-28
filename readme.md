@@ -1,9 +1,10 @@
 ## Link
-    https://anduhrooo.github.io/personal-blog-assignment/
+
+https://anduhrooo.github.io/personal-blog-assignment/
 
 ## Description
 
-    I created a two page website that accpets user inputs (username, title, content) and builds them onto a new page. Information is stored in local storage to be retrieved later. There is a light and dark mode toggle that also remembers the user's last selected choice. 
+I created a two page website that accpets user inputs (username, title, content) and builds them onto a new page. Information is stored in local storage to be retrieved later. There is a light and dark mode toggle that also remembers the user's last selected choice. 
 
 ## User Story
 
@@ -43,4 +44,4 @@
 
 ## Credits
 
-    all work was done by me and is my own.
+all work was done by me and is my own.
