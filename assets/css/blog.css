@@ -1,13 +1,15 @@
-:root {
+/* :root {
     --primary-color: grey;
     --secondary-color: black;
     --accent-color: pink;
     --spacing: 20px;
-}
+} */
 
 main {
-    /* justify-content: center;
-    width: 100%; */
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #displayblog{
@@ -16,11 +18,9 @@ main {
 }
 
 article {
-    background-color: var(--primary-color);
     padding: var(--spacing);
-    border: 10px solid var(--secondary-color);
+    border: 10px solid var(--accent-color);
     margin: var(--spacing);
     display: flex;
     flex-direction: column;
-    width: 90%;
 }

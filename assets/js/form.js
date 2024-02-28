@@ -12,7 +12,15 @@ formInputs.addEventListener(`submit`, function(event) {
     const username = document.getElementById(`username`).value.trim();
     const title = document.getElementById(`title`).value.trim();
     const content = document.getElementById(`content`).value.trim();
-    if (username.value || title.value || content.value === ``) {
+    if (username=== "") {
+        alert(`please fill out each field`)
+        return
+    }
+    if (title=== "") {
+        alert(`please fill out each field`)
+        return
+    }
+    if (content=== "") {
         alert(`please fill out each field`)
         return
     }

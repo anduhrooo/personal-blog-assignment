@@ -8,8 +8,8 @@ let brightness = localStorage.getItem( `brightness`)
 
 
 function setBrightness() {
-    body.id = brightness
-}
+        body.id = brightness
+    }
 
 setBrightness()
 

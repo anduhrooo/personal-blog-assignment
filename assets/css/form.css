@@ -1,10 +1,19 @@
+/* :root {
+    --primary-light: #dee4e7;
+    --secondary-light: #222222;
+    --primary-dark: #37474f;
+    --secondary-dark: #ffffff;
+    --accent-color: #0071BC;
+    --spacing: 20px;
+} */
+
 main {
 height: 90vh;
 }
 
 .leftSide {
     width: 50%;
-    border: 10px dashed var(--secondary-color);
+    border: 10px dashed var(--accent-color);
     margin: var(--spacing);
     display: flex;
     /* position: static; */
@@ -22,7 +31,7 @@ height: 90vh;
 }
 
 .leftSide img {
-    border: 1px solid var(--secondary-color);
+    border: 0px solid var(--secondary-dark);
     border-radius: 300px;
     margin: var(--spacing);
     display: flex;
@@ -33,11 +42,32 @@ height: 90vh;
 .rightSide {
     width: 50%;
     padding: var(--spacing);
-    border: 10px dashed var(--secondary-color);
+    border: 10px dashed var(--accent-color);
     margin: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.rightSide h2 {
+    display: flex;
+    justify-content: center;
 }
 
 #formInputs {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    padding: 10px 0;
+}
+
+#submit {
+    margin: var(--spacing) 0;
+}
+
+#message {
+    color: var(--secondary-light)
 }
