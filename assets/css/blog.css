@@ -5,9 +5,22 @@
     --spacing: 20px;
 }
 
+main {
+    /* justify-content: center;
+    width: 100%; */
+}
+
+#displayblog{
+    justify-content: center;
+    width: 100%;
+}
+
 article {
     background-color: var(--primary-color);
     padding: var(--spacing);
     border: 10px solid var(--secondary-color);
     margin: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }

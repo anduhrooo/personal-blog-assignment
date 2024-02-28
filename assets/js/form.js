@@ -9,9 +9,13 @@ const linkUrl = "blog.html";
 
 formInputs.addEventListener(`submit`, function(event) {
     event.preventDefault();
-    const username = document.getElementById(`username`).value;
-    const title = document.getElementById(`title`).value;
-    const content = document.getElementById(`content`).value;
+    const username = document.getElementById(`username`).value.trim();
+    const title = document.getElementById(`title`).value.trim();
+    const content = document.getElementById(`content`).value.trim();
+    if (username.value || title.value || content.value === ``) {
+        alert(`please fill out each field`)
+        return
+    }
     entries.push({username, title, content})
     localStorage.setItem(`entries`, JSON.stringify(entries));
     window.location.href = linkUrl

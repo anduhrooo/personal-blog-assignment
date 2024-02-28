@@ -21,8 +21,6 @@ header {
     align-items: center;
 }
 
-
-/* TODO: this will change once i add a toggle */
 header button {
     font-size: 40px;
 }
@@ -37,7 +35,7 @@ header button {
 
 main {
     display: flex;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 footer {
