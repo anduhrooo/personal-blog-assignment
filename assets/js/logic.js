@@ -4,17 +4,13 @@ const img = document.getElementById(`img`)
 const msg = document.getElementById(`message`)
 let brightness = localStorage.getItem( `brightness`)
 
-// add local storage for mode toggle
-
-
 function setBrightness() {
         body.id = brightness
     }
-
 setBrightness()
 
+// changes between light and dark mode
 mode.addEventListener(`click`, function() {
-    // console.log(`click`)
     if (body.id === `darkMode`) {
         body.id = `lightMode`
         localStorage.setItem(`brightness`, body.id)

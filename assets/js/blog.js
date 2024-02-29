@@ -6,6 +6,7 @@ let entries = JSON.parse(localStorage.getItem(`entries`));
 
 renderMessage()
 
+// renders all saved messages from local storage to page
 function renderMessage() {
     for (let i = 0; i < entries.length; i++) {
         const articleEl = document.createElement(`article`);
@@ -24,7 +25,7 @@ function renderMessage() {
 }
 
 
-
+// adds back button functionality
 backBtn.addEventListener (`click`, function() {
     console.log(`click`)
     localStorage.setItem(`entries`, JSON.stringify(entries))

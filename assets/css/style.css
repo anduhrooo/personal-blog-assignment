@@ -28,7 +28,7 @@ header button {
 }
 
 body {
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
 }
 
 #darkMode {

@@ -12,8 +12,9 @@ main {
     justify-content: center;
 }
 
-#displayblog{
-    justify-content: center;
+section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
